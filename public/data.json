@@ -1,0 +1,26 @@
+[
+    {
+        "practise": "DISCRIMINATION",
+        "id": 1,
+        "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
+        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
+        "price": 200,
+        "btn": "Discrimition suggestion"
+    },
+    {
+        "practise": "DISCRIMINATION",
+        "id": 2,
+        "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
+        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
+        "price": 200,
+        "btn": "Discrimition suggestion"
+    },
+    {
+        "practise": "DISCRIMINATION",
+        "id": 3,
+        "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
+        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
+        "price": 200,
+        "btn": "Discrimition suggestion"
+    }
+]
