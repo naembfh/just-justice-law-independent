@@ -12,6 +12,7 @@ import Notfound from './Shared/Notfound/Notfound';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
 import Footer from './Shared/Footer/Footer';
+import Services from './Pages/Services/Services';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>

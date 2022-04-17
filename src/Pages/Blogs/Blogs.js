@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
+        <div className='m-2 '>
             <h1>Blogs</h1>
             <h3> Why are you using firebase? What other options do you have to implement authentication?</h3>
             <p>- I think Firebase is small or easy to learn first authentication. So it has been shown in the course to teach us easily and since most of the case front end logic of Firebase is used so it is easy for us to setup. It provides end to end solution, supporting email and passwors accounts, phoneAuth and Google, Twitter, Facebook, Github login and more. There are other alternatives without firebase such as Parse, Flutter, Back4App, Okta etc.</p>

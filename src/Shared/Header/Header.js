@@ -17,10 +17,10 @@ const Header = () => {
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Navbar.Brand href="#home">Just Justice</Navbar.Brand>
+                        <Navbar.Brand as={Link} to='/' href="#home">Just Justice</Navbar.Brand>
 
                         <Nav.Link as={Link} to='/'>Home</Nav.Link>
-                        <Nav.Link href="#services">Services</Nav.Link>
+                        <Nav.Link as={Link} to='/services' href="#services">Services</Nav.Link>
 
 
 
