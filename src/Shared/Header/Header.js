@@ -12,24 +12,29 @@ const Header = () => {
     }
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" sticky='top' variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link as={Link} to='/'>Home</Nav.Link>
-                            <Nav.Link href="#services">Services</Nav.Link>
 
-                        </Nav>
 
-                        <Nav>
-                            {user ? <button onClick={handleSignOut}>Log Out</button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>}
+                        <Nav.Link as={Link} to='/'>Home</Nav.Link>
+                        <Nav.Link href="#services">Services</Nav.Link>
 
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
-                        </Nav>
+                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+
+                        <Nav.Link as={Link} to='/blogs'>
+                            Blogs
+                        </Nav.Link>
+                        <Nav.Link as={Link} to='/about'>
+                            About Me
+                        </Nav.Link>
+                        {user ? <button onClick={handleSignOut}>Log Out</button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>}
+
+
+
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

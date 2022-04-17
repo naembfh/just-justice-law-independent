@@ -1,26 +1,26 @@
 [
     {
-        "practise": "DISCRIMINATION",
+        "practise": "Contract Review and Negotiation",
         "id": 1,
-        "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
-        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
+        "description": "Unfortunately, many people sign them without a full understanding of their terms.  You're always better off negotiating an agreement on the front end, rather than waiting for something to go wrong.  That's why we encourage all individuals to schedule a comprehensive review session before they sign anything.  We'll make sure you understand every last word of your agreement, and give you the tools you need to make important changes.  If you've already signed a contract and need help enforcing it - or getting out of it - we can help with that too. ",
+        "img": "https://i.ibb.co/s5C835G/contract.jpg",
         "price": 200,
-        "btn": "Discrimition suggestion"
+        "btn": "consultation For Contract"
     },
     {
         "practise": "DISCRIMINATION",
         "id": 2,
         "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
-        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
-        "price": 200,
-        "btn": "Discrimition suggestion"
+        "img": "https://i.ibb.co/NnTBCfW/discrimination.jpg",
+        "price": 250,
+        "btn": "consultation For Discrimition"
     },
     {
         "practise": "DISCRIMINATION",
         "id": 3,
-        "description": "You have the right to be employed in a workplace free of unlawful discrimination.  Your employer cannot use any of your protected traits (listed below) as a factor when making important employment decisions like hiring, firing, compensation, promotions, demotions, transfers, or layoffs. ",
-        "img": "https://i.ibb.co/949FSnk/rod-long-f6-PNAO4-Kn18-unsplash.jpg",
-        "price": 200,
-        "btn": "Discrimition suggestion"
+        "description": "It's Simple.  Everyone deserves equal pay for equal work.  That goal, however, has still not been fully achieved.  Fortunately, there are laws to protect you from unequal pay, and lawyers like us who stand ready to enforce them.  ",
+        "img": "https://i.ibb.co/j3ZS1rs/equalpay.jpg",
+        "price": 150,
+        "btn": "consultation For Equal Pay"
     }
 ]
