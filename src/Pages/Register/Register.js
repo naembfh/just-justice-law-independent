@@ -47,7 +47,7 @@ const Register = () => {
 
     }
     return (
-        <>
+        <div className='w-50 mx-auto'>
 
             <h1 className='text-center'>Register</h1>
             <Form onSubmit={handleLoginSubmit} className='w-50 mx-auto'>
@@ -72,12 +72,12 @@ const Register = () => {
                     <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Password" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button className='btn btn-dark rouded' variant="primary" type="submit">
                     Register
                 </Button>
             </Form>
-            <p>Already Register ? <Link to='/login'>Login First</Link></p>
-        </>
+            <p className='text-center'>Already Register ? <Link className='btn btn-dark rouded' to='/login'>Login First</Link></p>
+        </div>
 
     );
 };

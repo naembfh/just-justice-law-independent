@@ -47,7 +47,7 @@ const Login = () => {
     const handleResetPassword = async () => {
         if (email) {
             await sendPasswordResetEmail(email)
-            toast('Email Sent')
+            toast('Reset Email Sent')
         }
         else {
             toast('Enter Your Email Address')
@@ -70,17 +70,19 @@ const Login = () => {
                     <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button className='btn btn-dark rouded' variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
             {
                 error && <p className='text-danger'>{error.message}</p>
             }
-            <p>New to here ? <Link to='/register'>Register First</Link></p>
-            <p>Forger Password ? <button onClick={handleResetPassword}>Reset Password</button> </p>
-            <SocialLogin></SocialLogin>
-            <ToastContainer />
+            <div className='text-center'>
+                <p >New to here ? <Link className='btn btn-dark rouded' to='/register'>Register First</Link></p>
+                <p>Forger Password ? <button className='btn btn-dark rouded' onClick={handleResetPassword}>Reset Password</button> </p>
+                <SocialLogin></SocialLogin>
+                <ToastContainer />
+            </div>
         </div>
     );
 };

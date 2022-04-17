@@ -20,7 +20,7 @@ const Header = () => {
                         <Navbar.Brand as={Link} to='/' href="#home">Just Justice</Navbar.Brand>
 
                         <Nav.Link as={Link} to='/'>Home</Nav.Link>
-                        <Nav.Link as={Link} to='/services' href="#services">Services</Nav.Link>
+                        <Nav.Link as={Link} to='/services' >Services</Nav.Link>
 
 
 
@@ -30,7 +30,7 @@ const Header = () => {
                         <Nav.Link as={Link} to='/about'>
                             About Me
                         </Nav.Link>
-                        {user ? <button onClick={handleSignOut}>Log Out</button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>}
+                        {user ? <button className='btn btn-dark rouded' onClick={handleSignOut}>Log Out</button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>}
 
 
 
