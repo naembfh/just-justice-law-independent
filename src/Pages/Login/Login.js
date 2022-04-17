@@ -12,6 +12,7 @@ const Login = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -35,6 +36,10 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true })
     }
+
+
+
+
     const handleLoginSubmit = event => {
         event.preventDefault()
         signInWithEmailAndPassword(email, password)
@@ -69,6 +74,9 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
+            {
+                error && <p className='text-danger'>{error.message}</p>
+            }
             <p>New to here ? <Link to='/register'>Register First</Link></p>
             <p>Forger Password ? <button onClick={handleResetPassword}>Reset Password</button> </p>
             <SocialLogin></SocialLogin>
