@@ -8,6 +8,7 @@ import Checkout from './Pages/Checkout/Checkout';
 import RequireAuth from './RequireAuth/RequireAuth';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import Notfound from './Shared/Notfound/Notfound';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<Notfound></Notfound>}></Route>
 
       </Routes>
     </>
