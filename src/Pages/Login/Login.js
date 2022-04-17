@@ -1,10 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Form } from 'react-bootstrap';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Login = () => {
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const location = useLocation()
+    const navigate = useNavigate()
+
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const handleEmailBlur = (event) => {
+        setEmail(event.target.value)
+    }
+    const handlePasswordBlur = (event) => {
+        setPassword(event.target.value)
+    }
+    let from = location.state?.from?.pathname || "/";
+    if (user) {
+        navigate(from, { replace: true })
+    }
+    const handleLoginSubmit = event => {
+        event.preventDefault()
+        signInWithEmailAndPassword(email, password)
+    }
     return (
-        <div>
-            <h1>Lofin</h1>
-        </div>
+        <>
+            <h1 className='text-center'>Login</h1>
+            <Form onSubmit={handleLoginSubmit} className='w-50 mx-auto'>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" />
+                    <Form.Text className="text-muted">
+                        We'll never share your email with anyone else.
+                    </Form.Text>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" />
+                </Form.Group>
+
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form>
+            <p>New to here ? <Link to='/register'>Register First</Link></p>
+        </>
     );
 };
 
