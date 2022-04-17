@@ -11,6 +11,7 @@ import Register from './Pages/Register/Register';
 import Notfound from './Shared/Notfound/Notfound';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
+import Footer from './Shared/Footer/Footer';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='*' element={<Notfound></Notfound>}></Route>
 
       </Routes>
+      <Footer></Footer>
     </>
   );
 }
